@@ -1,3 +1,6 @@
 ﻿  main.cpp
+  VulkanRendererGlfw.cpp
+  Generating Code...
+E:\visualstudio\myprojects\VulkanApiEngine\VulkanRendererGlfw.cpp(24): warning C4715: 'VulkanRendererGlfw::initialize': not all control paths return a value
 LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
   VulkanApiEngine.vcxproj -> E:\visualstudio\myprojects\VulkanApiEngine\x64\Debug\VulkanApiEngine.exe

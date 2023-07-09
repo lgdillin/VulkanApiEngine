@@ -136,9 +136,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="VulkanRendererGlfw.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GlfwGameRunner.hpp" />
     <ClInclude Include="GlfwWindow.hpp" />
+    <ClInclude Include="Utilities.hpp" />
+    <ClInclude Include="VulkanRendererGlfw.hpp" />
+    <ClInclude Include="VulkanValidation.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SurfacesImageViewsAndSwapchain.md" />
+    <None Include="vkInstancesDevicesValidation.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

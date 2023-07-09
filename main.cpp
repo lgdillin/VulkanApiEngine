@@ -2,7 +2,7 @@
 #include <iostream>
 
 // we can use vulkan through glfw
-//#define GLFW_INCLUDE_VULKAN
+#define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
 
 #define GLM_FORCE_RADIANS
@@ -13,21 +13,14 @@
 #include <vulkan/vulkan.h>
 
 #include "GlfwWindow.hpp"
+#include "VulkanRendererGlfw.hpp"
+#include "GlfwGameRunner.hpp"
 
 
 int main() {
-	
-	GlfwWindow glfwWindow;
-	glfwWindow.initialize();
-	
+	GlfwGameRunner game;
+	if (game.initializeGame() == EXIT_FAILURE) return EXIT_FAILURE;
+	game.run();
 
-	// Simple loop
-	while (!glfwWindowShouldClose(glfwWindow.getWindow())) {
-		glfwPollEvents();
-	}
-
-	// Clean up and exit
-	glfwDestroyWindow(glfwWindow.getWindow());
-	glfwTerminate();
 	return 0;
 }
